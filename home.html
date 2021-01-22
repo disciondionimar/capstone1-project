@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">   
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="assets/style.css">
+    <title>SOLAR EXPLORER | Home</title>
+</head>
+<body>
+    
+        <header id="header" class="header">
+          <a class="header__navBrand" href="home.html">
+            <h1>SOLeX</h1>
+        </a>
+        <h4 id="header__openNav" class="header__menuToggle">Menu</h4>
+            <nav id="header__nav" class="header__nav">
+                
+                <div class="header__navMenu">
+                    <ul class="header__menu">
+                      <h3 id="header__closeNav">X</h3>
+                        <li class="header__menuItem">
+                            <a class="header__menuLink" href="home.html">Home</a>
+                        </li>
+                        <li class="header__menuItem">
+                            <a class="header__menuLink" href="about.html">About</a>
+                        </li>
+                        <li class="header__menuItem">
+                            <a class="header__menuLink" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="header__menuItem">
+                            <a class="header__menuLink" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="home">
+
+        <div class="home__banner">
+            <h2 class="home__welcome">Welcome!</h2>
+            <h1 class="home__title">SOLAR EXPLORER</h1>
+        </div>
+        <div class="home__carouselContainer">
+          <div class="home__carousel">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/images/ilocos-wind-solar-farm.jpg" class="d-block w-100" alt="Ilocos Solar and Wind Power Plant">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="home__carouselTitle">ILOCOS SOLAR AND WIND POWER PLANT</h5>
+                      <p class="home__carouselText">Energy Logics established a 132-megawatt wind farm in Burgos, Ilocos Norte and a 100-megawatt solar power plant in Pasuquin, Ilocos Norte.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/images/philippine-floating-solar-farm.jpg" class="d-block w-100" alt="Philippines Floating Solar farm in Rizal">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="home__carouselTitle">RIZAL FLOATING SOLAR FARM</h5>
+                      <p class="home__carouselText">A 10 kilowatt-peak (kWp) floating solar farm was commissioned on Laguna Lake within Baras, Rizal province. This intended to supply the town with clean and free energy.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/images/batangas-solar-farm.jpg" class="d-block w-100" alt="Batangas Solar Farms">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="home__carouselTitle">BATANGAS SOLAR FARM</h5>
+                      <p class="home__carouselText">This is the 63.3-megawatt Calatagan Solar Farm at the convergence of Calatagan, Lian and Balayan towns, the largest solar facility completed in the Philippines.</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </a>
+              </div>
+        </div>
+        </div>
+        
+        <div class="home__latestNews">
+          <h3 class="home__latestNewsHeader">Latest News</h3>
+          <div class="home__latestNewsCardContainer">
+             <!-- Bootstrap card -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Filipinos urged to tap renewable energy amid power supply lack</h5>
+              <p class="card-text">MANILA – Renewable energy can be tapped to augment power supply shortages in the Philippines, a stakeholder said Wednesday.</p>
+              <a href="https://news.abs-cbn.com/video/business/05/29/19/filipinos-urged-to-tap-renewable-energy-amid-power-supply-lack" class="btn btn-primary" target="_blank">More Info</a>
+            </div>
+          </div>
+          <!-- End Bootstrap card -->
+
+          <!-- Bootstrap card -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">DoE evaluating renewables applications covering 1,479 megawatts</h5>
+              <p class="card-text">THE Department of Energy (DoE) said Tuesday that it has received 44 applications for renewables service and operating contracts linked to projects with the potential to generate 1,479 megawatts (MW).</p>
+              <a href="https://www.bworldonline.com/doe-evaluating-renewables-applications-covering-1479-megawatts/" target="_blank" class="btn btn-primary">More Info</a>
+            </div>
+          </div>
+          <!-- End Bootstrap card -->
+
+          <!-- Bootstrap card -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Total unit enters PH, invests in solar plants.</h5>
+              <p class="card-text">A renewable energy subsidiary of oil giant Total is debuting in the Philippine market with an initial portfolio consisting of a 60-megawatt solar project in Tarlac province and a 75-MW solar project in Zambales province, both of which are expected to start commercial operations in 2021.</p>
+              <a href="#" class="btn btn-primary">More Info</a>
+            </div>
+          </div>
+          <!-- End Bootstrap card -->
+          </div>
+         
+        </div>
+
+        <div class="home__qoutes">
+          <img src="assets/images/renewable-qoutes.jpg" alt="renewable energy qoutes">
+        </div>
+
+        <div class="home__solar">
+          <div class="home__solarRow">
+            <img src="assets/images/solar-energy.jpg" alt="what is solar energy?">
+            <div class="home__solarText">
+              <h3 class="home__solarTitle">
+                What is Solar Energy? 
+              </h3>
+              <p class="home__solarInfo">
+                Solar energy refers to capturing the energy from the Sun and subsequently converting it into electricity. We can then use that electricity to light up our homes, streets, and businesses, and power our machines as well. We can also use the term solar power with the same meaning.
+
+                The Sun’s energy is in the form of solar radiation. Solar radiation makes the production of solar electricity possible.
+
+                China is the world’s largest generator of solar energy. Today, it has a solar energy capacity of 130 gigawatts.
+              </p>
+              <p class="home__solarReference">
+                Source: 
+                <a href="https://marketbusinessnews.com/financial-glossary/solar-energy/" target="_blank"><small>https://marketbusinessnews.com/financial-glossary/solar-energy/</small></a>
+              </p>
+            </div>
+          </div>
+          <hr>
+          <div class="home__solarRow">
+            <img src="assets/images/solar-energy-works.jpg" alt="how solar energy works?">
+            <div class="home__solarText">
+              <h3 class="home__solarTitle">
+                How Solar Works? 
+              </h3>
+              <p class="home__solarInfo">
+                PV panels use lenses or mirrors to collect energy during daylight hours.
+
+                The panels are made up from semiconducting material sandwiched between two electrical contacts. When the sun strikes the panels, subatomic particles called electrons are released.
+
+                Electrons carry a negative electrical charge and are the primary carriers of electrical charge in any solid. The semiconductor is positively charged on one side and negatively charged on the other to encourage the electrons to travel in the same direction, setting up an electrical current.
+
+                The electrical contacts capture this direct current (DC). Domestic (and business) appliances require alternating current (AC), so before the electrical current can be used it must be converted from DC to AC via an inverter. The AC current is then transferred to your fuse box and from there distributed to the appliances when you turn them on.
+              </p>
+              <p class="home__solarReference">
+                Source: 
+                <!-- <a href="https://marketbusinessnews.com/financial-glossary/solar-energy/" target="_blank"><small>https://marketbusinessnews.com/financial-glossary/solar-energy/</small></a> -->
+              </p>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="home__solarBenefits">
+          <!-- <h2>Advantages and Disadvantages of Solar Power</h2> -->
+          <div class="home__solarPros">
+            <h3>Advantages of Solar Power</h3>
+            <ul>
+              <li>Renewable Energy Source</li>
+              <li>Reduces Electricity Bills</li>
+              <li>Diverse Applications</li>
+              <li>Low Maintenance Costs</li>
+              <li>Technology Development</li>
+            </ul>
+          </div>
+
+          <div class="home__solarCons">
+            <h3>Disadvantages of Solar Power</h3>
+            <ul>
+              <li>Cost</li>
+              <li>Weather Dependent</li>
+              <li>Solar Energy Storage is Expensive</li>
+              <li>Uses a Lot of Space</li>
+              <li>Associated with Pollution</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="home__solarSetup">
+          <h3>Types of Solar Home Setup</h3>
+          <div class="home__solarCards">
+            <div class="card">
+              <img src="assets/images/offgrid-setup.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Off-Grid Setup</h5>
+                <p class="card-text">Off-grid solar systems require battery storage and a backup generator.</p>
+                <a href="https://www.solarreviews.com/blog/grid-tied-off-grid-and-hybrid-solar-systems" class="btn btn-primary w-100">Learn More</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="assets/images/ongrid-setup.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">On-Grid Setup</h5>
+                <p class="card-text">Grid-tied, on-grid, utility-interactive, grid intertie and grid backfeeding are all terms used to describe the same concept – a solar system that is connected to the utility power grid.</p>
+                <a href="https://www.solarreviews.com/blog/grid-tied-off-grid-and-hybrid-solar-systems" class="btn btn-primary w-100">Learn More</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="assets/images/hybrid-setup.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Hybrid Setup</h5>
+                <p class="card-text">Hybrid solar systems combines the best from grid-tied and off-grid solar systems. These systems can either be described as off-grid solar with utility backup power, or grid-tied solar with extra battery storage.</p>
+                <a href="https://www.solarreviews.com/blog/grid-tied-off-grid-and-hybrid-solar-systems" class="btn btn-primary w-100">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+    <footer class="footer">
+        <div class="footer__left">
+          <p class="footer__text">No Copyright infringement intended.This website is for educational purposes only and not for commercial use. We do not own any images and articles posted in this site.Credits to all the owners of the articles and images.</p>
+          <h4 class="footer__name">Dionimar Discion</h4>
+          <h5 class="footer__info">BATCH36 | ZUITT CODING BOOTCAMP</h5>
+        </div>
+        <div class="footer__right">
+          <img src="assets/images/fb-f_logo.png" alt="facebook logo">
+          <img src="assets/images/linkedin_logo.png" alt="linkedin logo">
+          <img src="assets/images/youtube_logo.png" alt="youtube logo">
+        </div>
+      </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="assets/script.js">
+      
+    </script>
+  </body>
+</html>

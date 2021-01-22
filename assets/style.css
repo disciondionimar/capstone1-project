@@ -1,0 +1,879 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: lightgray;
+}
+
+.licorice {
+  transition: all 300ms ease-in-out;
+  background-color: rgba(40, 1, 25, 0.9) !important;
+}
+
+.card {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  box-shadow: 0px 10px 9px -9px rgba(40, 1, 25, 0.75);
+}
+
+.card:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* Landing Page */
+
+.landing {
+  height: 100vh;
+  background-image: url("images/landing-image.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landing__container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing__title {
+  color: #25a937;
+  font-size: 64px;
+  margin-bottom: 20px;
+  text-shadow: 4px 4px rgba(1, 1, 1, 0.5);
+}
+
+.landing__link {
+  cursor: pointer;
+}
+
+.landing__link > button {
+  padding: 20px 60px;
+  color: #eee;
+  background-color: #18501f;
+  border-radius: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: 0 20px 9px -9px rgba(1, 1, 1, 0.8);
+}
+
+/* End Landing Page */
+
+/* Navigation CSS */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 199;
+  padding: 10px 60px;
+  background-color: rgba(40, 1, 25, 0.2);
+}
+
+.header__menuToggle {
+  display: none;
+}
+
+#header__closeNav {
+  display: none;
+}
+
+#header__nav.header__nav {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* margin-bottom: 0; */
+}
+
+.header__navBrand {
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.header__navMenu {
+  width: 30%;
+}
+
+.header__menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+.header__menuItem {
+  padding: 10px;
+  margin-left: 10px;
+  outline: 0;
+  border: 0;
+  /* background-color: greenyellow; */
+}
+
+.header__menuItem:hover {
+  border-radius: 5px;
+  background-color: rgba(40, 1, 25, 0.9) !important;
+}
+
+.header__menuLink {
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* End Navigation CSS */
+
+/* Home Banner CSS */
+
+.home__banner {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/renewable-homeland.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.home__welcome {
+  color: #25a937;
+  text-align: center;
+  font-size: 100px;
+  text-shadow: 1px 1px #44363f;
+}
+
+.home__title {
+  color: #25a937;
+  text-align: center;
+  font-size: 120px;
+  /* background-image: url("images/solar-panel.png"); */
+  text-shadow: 2px 2px #44363f;
+  letter-spacing: 5px;
+}
+
+/* End Home Banner CSS */
+
+/* Home Carousel */
+
+.home__carouselContainer {
+  height: 70vh;
+  background-image: url("images/solar-panel.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.home__carousel {
+  display: grid;
+  place-items: center;
+  width: 70vw;
+  height: 100%;
+  margin: 0px auto;
+}
+
+.home__carousel img {
+  height: 50vh !important;
+  width: 70vw !important;
+  object-fit: fill;
+}
+
+.home__carousel .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.home__carousel .carousel-caption > h5 {
+  font-weight: bold;
+}
+
+/* End Home Carousel */
+
+/* Latest News */
+
+.home__latestNews {
+  width: 80%;
+  padding: 50px 50px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home__latestNewsCardContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home__latestNews .card {
+  width: 300px;
+}
+
+.home__latestNews .card:not(:last-child) {
+  margin-right: 10px;
+}
+
+.home__latestNewsHeader {
+  margin-bottom: 20px;
+}
+
+/* End Latest News */
+
+/* home qoutes  */
+
+.home__qoutes {
+  width: 72.5%;
+  margin: 50px auto;
+}
+
+.home__qoutes > img {
+  width: 100%;
+  object-fit: fill;
+}
+
+/* end home qoutes */
+
+/* Solar Info Row */
+.home__solar {
+  background-image: url("images/solar1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home__solarRow {
+  width: 72.5%;
+  margin: 10px auto;
+  display: flex;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.home__solarRow + hr {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 72.5%;
+}
+
+.home__solarRow > img {
+  width: 50%;
+  object-fit: contain;
+}
+
+.home__solarRow .home__solarText {
+  width: 50%;
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.home__solarText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home__solarInfo {
+  line-height: 2rem;
+  text-align: justify;
+}
+
+.home__solarReference a {
+  color: gray;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.home__solarReference a:hover {
+  color: blue;
+}
+
+/* End Solar Info Row */
+
+/* Advantage and disadvantage of solar */
+
+.home__solarBenefits {
+  width: 72.5%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.home__solarPros {
+  flex: 0.5;
+}
+
+.home__solarCons {
+  flex: 0.5;
+}
+
+/* end Advantage and disadvantage of solar */
+
+/* Solar home setup */
+
+.home__solarSetup {
+  width: 72.5%;
+  margin: 50px auto;
+}
+
+.home__solarSetup > h3 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.home__solarCards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home__solarCards .card {
+  flex: 0.33;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.home__solarCards .card > img {
+  height: 200px;
+  border-bottom: 1px solid gray;
+}
+
+.home__solarCards .card:not(:last-child) {
+  margin-right: 30px;
+}
+
+.home__solarCards .card .card-text {
+  color: gray;
+}
+
+/* end solar home setup */
+
+/* footer */
+
+.footer {
+  padding: 30px 50px;
+  display: flex;
+  background: rgba(40, 1, 25, 0.9);
+  color: gray;
+}
+
+.footer__left {
+  flex: 0.7;
+}
+
+.footer__right {
+  flex: 0.3;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer__right > img {
+  width: 50px;
+  height: 50px;
+}
+/* end footer */
+
+/* About Banner */
+
+.about__banner {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-image: url("images/solar-panel.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about__title {
+  color: #25a937;
+  text-align: center;
+  font-size: 120px;
+  text-shadow: 2px 2px #44363f;
+  letter-spacing: 5px;
+}
+/* End About Banner */
+
+/* about mission vision */
+
+.about__missionVision {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.about__mission {
+  width: 50%;
+  padding-top: 50px;
+  align-self: flex-start;
+  padding-left: 10%;
+}
+
+.about__missionText {
+  margin-top: 20px;
+  line-height: 2rem;
+}
+
+.about__vision {
+  width: 50%;
+  padding-bottom: 50px;
+  align-self: flex-end;
+  text-align: right;
+  padding-right: 10%;
+}
+
+.about__visionText {
+  margin-top: 20px;
+  line-height: 2rem;
+}
+
+/* end about mission vision */
+
+/* team */
+
+.about__team {
+  text-align: center;
+  padding: 50px;
+  background-image: url("images/Solar-installer.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.about__team > h2 {
+  padding: 30px;
+}
+
+.about__teamContainer {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about__teamContainer .card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin-bottom: 10px;
+}
+
+.about__teamContainer .card img {
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+  padding: 5px;
+  border: 5px solid #25a937;
+}
+
+.about__teamContainer .card .card-body {
+  /* width: 250px; */
+  padding-right: 0;
+  padding-left: 0;
+  text-align: center;
+  background-color: rgba(40, 1, 25, 0.75);
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* end team */
+
+/* Services */
+
+.about__services {
+  padding: 50px;
+  text-align: center;
+}
+
+.about__services > h2 {
+  text-align: center;
+  padding: 30px;
+}
+
+.about__servicesContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about__servicesContainer .card {
+  width: 300px;
+}
+
+.about__servicesContainer .card img {
+  width: 300px;
+  height: 250px;
+}
+
+.about__servicesContainer .card .card-text {
+  font-size: 18px;
+}
+
+/* End Services */
+
+/* Gallery */
+
+/* Banner */
+
+.gallery__banner {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-image: url("images/solar-cars.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gallery__title {
+  color: #25a937;
+  text-align: center;
+  font-size: 120px;
+  text-shadow: 2px 2px #44363f;
+  letter-spacing: 5px;
+}
+
+/* End Banner */
+
+/* Gallery Magazine */
+
+.gallery__container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.gallery__container .card {
+  width: 280px;
+  position: relative;
+  margin: 10px;
+}
+
+.gallery__container .card img {
+  width: 100%;
+  height: 300px;
+}
+
+.gallery__container .card .card-body {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(40, 1, 25, 0.75);
+  color: #fff;
+  display: none;
+  transition: transform 500ms ease-in;
+}
+
+.gallery__container .card:hover .card-body {
+  display: block;
+}
+
+.gallery__container .card:hover {
+  transform: scale(1.07);
+}
+/* Gallery Magazine */
+
+/* End Gallery */
+
+/* Contact */
+
+.contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contact > h1 {
+  margin-top: 100px;
+  font-size: 48px;
+}
+
+.contact__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact__left {
+  flex: 0.5;
+  padding: 10px 50px;
+}
+
+.contact__right {
+  flex: 0.5;
+  padding: 10px 50px;
+}
+
+/* end Contact */
+
+/* Media Queries */
+/* Tablets */
+@media only screen and (max-width: 900px) {
+  .home__welcome {
+    font-size: 60px;
+  }
+
+  .home__title,
+  .about__title {
+    font-size: 80px;
+  }
+
+  .home__latestNewsCardContainer .card:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .about__team {
+    padding: 10px 0;
+  }
+
+  .about__teamContainer {
+    width: 100%;
+  }
+
+  .about__teamContainer .card {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    padding: 10px 30px;
+    height: 20%;
+    position: relative;
+  }
+
+  #header__nav.header__nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+    background-color: rgba(40, 1, 25, 1);
+    /* position: relative; */
+
+    display: none;
+  }
+
+  #header__closeNav {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #header__closeNav:hover {
+    color: #f00;
+  }
+
+  .header__menu {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .header__menuToggle {
+    display: inherit;
+    background-color: rgba(40, 1, 25, 0.9);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    height: 100%;
+    margin-bottom: 0;
+  }
+
+  .home__welcome {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .home__title,
+  .about__title {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .home__latestNewsCardContainer {
+    flex-direction: column;
+  }
+
+  .home__latestNewsCardContainer .card {
+    width: 100%;
+  }
+
+  .home__latestNewsCardContainer .card:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .home__solarCards {
+    flex-direction: column;
+  }
+
+  .home__solarCards .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .home__solarRow {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+  }
+
+  .home__solarRow > img {
+    width: 100%;
+  }
+
+  .home__solarRow .home__solarText {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .home__solarBenefits {
+    flex-direction: column;
+  }
+
+  .home__solarPros {
+    margin-bottom: 20px;
+  }
+
+  .contact__container {
+    flex-direction: column;
+  }
+  .contact__right {
+    display: none;
+  }
+
+  .contact > h1 {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home__welcome {
+    font-size: 40px;
+  }
+
+  .home__title,
+  .about__title {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .home__carousel {
+    width: 100%;
+  }
+
+  .home__carousel img {
+    width: 100% !important;
+  }
+
+  .home__latestNews {
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  footer.footer {
+    flex-direction: column;
+  }
+
+  .footer__right {
+    justify-content: flex-start !important;
+  }
+
+  .footer__right > img {
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  .about__teamContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__servicesContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__mission {
+    width: 100%;
+    padding-right: 50px;
+    text-align: justify;
+    margin-bottom: 50px;
+  }
+
+  .about__vision {
+    width: 100%;
+    padding-left: 50px;
+    text-align: justify;
+  }
+
+  .contact__container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .home__carousel {
+    width: 100%;
+  }
+
+  .home__carousel img {
+    width: 100% !important;
+  }
+
+  .home__carouselContainer {
+    background-image: none;
+  }
+
+  .home__latestNews {
+    padding: 0;
+  }
+
+  .home__solarRow {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .home__solarRow .home__solarText {
+    margin-left: 0;
+  }
+
+  .home__solarSetup {
+    width: 90%;
+  }
+}

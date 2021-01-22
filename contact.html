@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="assets/style.css">
+    <title>SOLAR EXPLORER | Home</title>
+</head>
+
+<body>
+
+    <header id="header" class="header">
+        <a class="header__navBrand" href="home.html">
+            <h1>SOLeX</h1>
+        </a>
+        <h4 id="header__openNav" class="header__menuToggle">Menu</h4>
+        <nav id="header__nav" class="header__nav">
+
+            <div class="header__navMenu">
+                <ul class="header__menu">
+                    <h3 id="header__closeNav">X</h3>
+                    <li class="header__menuItem">
+                        <a class="header__menuLink" href="home.html">Home</a>
+                    </li>
+                    <li class="header__menuItem">
+                        <a class="header__menuLink" href="about.html">About</a>
+                    </li>
+                    <li class="header__menuItem">
+                        <a class="header__menuLink" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="header__menuItem">
+                        <a class="header__menuLink" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="contact">
+        <h1>Get in touch with us!</h1>
+        <div class="contact__container">
+            <div class="contact__left">
+                <form class="form-group">
+                    <label for="name" class="text-light">Name</label>
+                    <input type="text" id="name" class="form-control" required="required" placeholder="Enter Your Name">
+                    <label for="email" class="text-light">Email</label>
+                    <input type="email" id="email" class="form-control" required="required"
+                        placeholder="Enter Your Email">
+                    <label for="contact" class="text-light">Contact Number</label>
+                    <input type="number" id="contact" class="form-control no-spinners"
+                        placeholder="Enter Your Contact Number">
+                    <label for="subject" class="text-light">Subject</label>
+                    <select id="subject" name="subject" class="form-control" required="required">
+                        <option value="na" selected="">Choose One:</option>
+                        <option value="Inquire">General Inquiry</option>
+                        <option value="qoute">Request a Qoutation</option>
+                        <option value="product">Product Support</option>
+                    </select>
+
+                    <label for="message" class="text-light">Message</label>
+                    <textarea class="form-control" rows="7" cols="25" required="required"></textarea>
+
+                    <button class="btn btn-block bg-primary mt-3 text-light">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact__right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123911.51811624662!2d121.09795716907468!3d13.944611998510322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd13576170055f%3A0xe6da25b39082662a!2sLipa%2C%20Batangas!5e0!3m2!1sen!2sph!4v1611311734529!5m2!1sen!2sph" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+
+
+    </div>
+    <footer class="footer">
+        <div class="footer__left">
+            <p class="footer__text">No Copyright infringement intended.This website is for educational purposes only and
+                not for commercial use. We do not own any images and articles posted in this site.Credits to all the
+                owners of the articles and images.</p>
+            <h4 class="footer__name">Dionimar Discion</h4>
+            <h5 class="footer__info">BATCH36 | ZUITT CODING BOOTCAMP</h5>
+        </div>
+        <div class="footer__right">
+            <img src="assets/images/fb-f_logo.png" alt="facebook logo">
+            <img src="assets/images/linkedin_logo.png" alt="linkedin logo">
+            <img src="assets/images/youtube_logo.png" alt="youtube logo">
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="assets/script.js">
+
+    </script>
+</body>
+
+</html>
