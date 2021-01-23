@@ -40,5 +40,17 @@ const windowResize = () => {
   });
 };
 
+const elements = document.querySelectorAll("div[data-aos], img[data-aos]");
+
+const removeAOS = () => {
+  if (window.innerWidth < 1000) {
+    elements.forEach((element) => {
+      element.removeAttribute("data-aos");
+    });
+  }
+};
+
+removeAOS();
+
 openNavMenu();
 windowResize();
